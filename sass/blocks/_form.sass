@@ -1,0 +1,73 @@
+.form
+    position: relative
+    display: flex
+    justify-content: center
+    height: 100%
+    &__title
+        margin-bottom: 50px
+        font-size: 33px
+        font-weight: 300
+        letter-spacing: 3px
+        text-transform: uppercase
+        color: #dadada
+        cursor: pointer
+    &__wrapper
+        transition: 0.4s all
+        padding: 25px 15px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 400px
+        height: 80%
+        background-color: rgba(0, 134, 164, 0.3)
+        border: 3px solid rgba(218, 218, 218, 0.583)
+        border-radius: 6px
+        backdrop-filter: blur(1.5px)
+        &:hover
+            +wrapper-hover
+    &__input-box
+        position: relative
+        transition: 1s all
+        // width: 100%
+        &__input
+            transition: 0.5s all
+            width: 300px
+            min-height: 50px
+            padding: 0 12px
+            border: 2px solid #dadada
+            border-radius: 4px
+            background-color: rgba(86, 86, 86, 0.3)
+            font-size: 18px
+            color: #FFFFFF
+            margin-bottom: 30px
+            outline: none
+            &::placeholder
+                color: #cccccc
+                text-align: left
+                font-weight: 400
+                text-transform: lowercase
+        &__input.error
+            border: 2px solid #dd0000ce
+        .fa-exclamation
+            display: none
+            position: absolute
+            left: 280px
+            top: 11.5px
+            color:  red
+            font-size: 25px
+    &__input-box.error-i
+        .fa-solid
+            display: block
+        label
+            transition: 0.5s all
+            position: absolute
+            left: 213px
+            top: 10px
+            font-size: 20px
+            font-weight: 300
+            letter-spacing: 2px
+            text-transform: uppercase
+            color:  #ff0000
+                
+

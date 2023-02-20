@@ -1,0 +1,23 @@
+.button
+    // position: absolute
+    margin-top: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(86,86,86, 0.3)
+    border: 2px solid #dadada
+    border-radius: 5px
+    cursor: pointer
+    font-size: 20px
+    letter-spacing: 2px
+    text-transform: uppercase
+    font-weight: 300
+    bottom: 60px
+    width: 100px
+    min-height: 30px
+    transition: 0.5s all
+    color: #000000
+    &:hover
+        +button-hover
+    &*:focus
+        outline: none

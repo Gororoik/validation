@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="https://kit.fontawesome.com/32016a9241.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <form action="" class="form" id='form-id'>
+                <div class="form__wrapper">
+                    <div class="form__title">Join us!</div>
+                    <div class="form__input-box">
+                        <input data-required="true" placeholder='name' type="text" class="form__input-box__input">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <div class="form__input-box">
+                        <input data-required="true" placeholder='surname' type="text" class="form__input-box__input">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <div class="form__input-box">
+                        <input data-min-length="3" data-required="true" placeholder='middle name' type="text" class="form__input-box__input">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <button type='submit' class="button">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- <script src="js/test.js"></script> -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
